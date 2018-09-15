@@ -1,2 +1,2 @@
 # Song-Lyrics-Game
-Instructs user to fill in blanks with correct song lyrics using JavaFx. 
+Instructs user to fill in blanks with correct song lyrics using Java and JavaFx. 
