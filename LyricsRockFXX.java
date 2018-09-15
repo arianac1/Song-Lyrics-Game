@@ -1,7 +1,4 @@
 import javafx.application.Application;
-
-
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -19,19 +16,15 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 
-
 public class LyricsRockFXX extends Application 
 {
 	public static void main(String[] args) 
 	{
 		launch(args);
-		
 	}
 	
 		int [] A = new int [4]; 
 	
-	     
-
 	public void start(Stage primaryStage)
 	{
 		GridPane pane1 = new GridPane();
@@ -50,11 +43,8 @@ public class LyricsRockFXX extends Application
 		t0.setFont(Font.font ("Verdana", 15));
 		GridPane.setConstraints(t0,1,0);
 
-
-
 		pane1.getChildren().addAll(button1,t0);  
 		GridPane.setConstraints(button1,1,3);
-
 
 		Scene scene = new Scene(pane1, 350, 100);
 		primaryStage.setTitle("Don't Forget The Lyrics"); // Set the stage title
@@ -116,8 +106,6 @@ public class LyricsRockFXX extends Application
 		textField4.setTranslateY(210);	
 		textField4.setMaxWidth(200);
 
-	
-
 		textField.textProperty().addListener((ov, oldValue, newValue) -> {
 			textField.setText(newValue.toUpperCase());
 		});
@@ -141,7 +129,7 @@ public class LyricsRockFXX extends Application
 
 		Text t00 = new Text();
 		t00.setWrappingWidth(300);
-		t00.setText("\nIf I go _____ then will you still call me Superman \nIf I’m ____ and well, will you be \nThere a-holding my ___ \nI’ll keep you by my side \nWith my ____ might \nKryptonite");
+		t00.setText("\nIf I go _____ then will you still call me Superman \nIf Iâ€™m ____ and well, will you be \nThere a-holding my ___ \nIâ€™ll keep you by my side \nWith my ____ might \nKryptonite");
 		t00.setTranslateX(30);
 		t00.setTranslateY(10);
 		t00.setFont(Font.font ("Verdana", 15));
@@ -149,10 +137,6 @@ public class LyricsRockFXX extends Application
 		grid2.getChildren().addAll(label,textField,label2,textField2,label3,textField3,label4,textField4,button2,t,t00);
 
 		////////////////////////////////////////////////////////////////////////////closes window1 opens window2
-		  
-		
-		
-		
 		button1.setOnAction(new EventHandler<ActionEvent>() 
 		{
 			@Override
@@ -170,8 +154,6 @@ public class LyricsRockFXX extends Application
 		pane3.setStyle("-fx-background-color: #000000;");
 		Scene scene2 = new Scene(pane3, 400, 350); 
 		stageAnswer1.setScene(scene2);
-
-
 
 		Button button3 = new Button(); ///button for stage 3
 		button3.setText("Next");
@@ -196,8 +178,6 @@ public class LyricsRockFXX extends Application
 
 				if(text.equals("CRAZY") && text2.equals("ALIVE") && text3.equals("HAND")&& text4.equals("SUPERHUMAN") )
 				{	  
-
-
 					Text correct = new Text ();
 					correct.setWrappingWidth(200);
 					correct.setText("CORRECT!");
@@ -246,8 +226,6 @@ public class LyricsRockFXX extends Application
 		});  
 
 		//////////////////////////////////////////////////////////////////////////////////////////////
-
-
 		GridPane grid3 = new GridPane();
 		grid3.setPadding(new Insets(10,10,10,10)); ////adds padding to sides of window
 		grid3.setVgap(8);//vertical spacing
@@ -301,9 +279,6 @@ public class LyricsRockFXX extends Application
 		textField04.setTranslateY(230);	
 		textField04.setMaxWidth(200);
 
-
-
-
 		textField01.textProperty().addListener((ov, oldValue, newValue) -> 
 		{
 			textField01.setText(newValue.toUpperCase());
@@ -336,11 +311,10 @@ public class LyricsRockFXX extends Application
 		t02.setTranslateY(50);
 		t02.setFont(Font.font ("Verdana", 15));
 
-
 		grid3.getChildren().addAll(label01,textField01,label02,textField02,label03,textField03,label04,textField04,button4,t2,t02);
 
 
-//////////
+		//////////////////////////////////////////////////////////////////////
 
 		button3.setOnAction(new EventHandler<ActionEvent>() 
 		{
@@ -430,14 +404,14 @@ public class LyricsRockFXX extends Application
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////window 4
 		GridPane grid4 = new GridPane();
-		grid4.setPadding(new Insets(10,10,10,10)); ////adds padding to 		sides of window
+		grid4.setPadding(new Insets(10,10,10,10)); ////adds padding to sides of window
 		grid4.setVgap(8);//vertical spacing
 		grid4.setHgap(8);//horizontal
 
 
 		Stage stage3 = new Stage();
 		stage3.setScene(new Scene(grid4, 400, 400));  
-		stage3.setTitle("Level 3"); // Set the stage title ///second 	stage name
+		stage3.setTitle("Level 3"); // Set the stage title ///second stage name
 
 		Button button6 = new Button(); ///button for stage 4
 		button6.setText("Next");
@@ -509,8 +483,6 @@ public class LyricsRockFXX extends Application
 		t03.setTranslateY(30);
 		t03.setFont(Font.font ("Verdana", 15));
 
-
-
 		grid4.getChildren().addAll(label001,textField001,label002,textField002,label003,textField003,label004,textField004,button6,t3,t03);
 
 		button5.setOnAction(new EventHandler<ActionEvent>() 
@@ -571,7 +543,6 @@ public class LyricsRockFXX extends Application
 				pane5.getChildren().add(iv1);
 				Score.increaseScoreByOne();
 				A[2]= Score.getScore();
-
 				}
 				else
 				{	Text wrong = new Text();
@@ -601,13 +572,13 @@ public class LyricsRockFXX extends Application
 
 
 		GridPane grid5 = new GridPane();
-		grid5.setPadding(new Insets(10,10,10,10)); ////adds padding to 		sides of window
+		grid5.setPadding(new Insets(10,10,10,10)); ////adds padding to sides of window
 		grid5.setVgap(8);//vertical spacing
 		grid5.setHgap(8);//horizontal
 
 		Stage stage4 = new Stage();
 		stage4.setScene(new Scene(grid5, 500, 400));  
-		stage4.setTitle("Level 4"); // Set the stage title ///second 	stage name
+		stage4.setTitle("Level 4"); // Set the stage title ///second stage name
 
 		Button button8 = new Button(); ///button for stage 2
 		button8.setText("Next");
@@ -696,8 +667,6 @@ public class LyricsRockFXX extends Application
 			textField12.setText(newValue.toUpperCase());
 		});
 
-
-
 		Text t4 = new Text();
 		t4.setText("4)American Idiot - Green Day");
 		t4.setTranslateX(-5);
@@ -714,8 +683,6 @@ public class LyricsRockFXX extends Application
 
 		grid5.getChildren().addAll(label7,textField7,label8,textField8,label9,textField9,label10,textField10,label11,textField11,label12,textField12,button8,t4,t04);
 
-
-
 		button7.setOnAction(new EventHandler<ActionEvent>() 
 		{
 			@Override
@@ -728,8 +695,6 @@ public class LyricsRockFXX extends Application
 		});
 
 		//////////////////////////////////////////////////////////////////////////	
-
-
 		StackPane pane6 = new StackPane(); // Create a new stage
 		Stage stageAnswer4 = new Stage();
 		stageAnswer4.setScene(new Scene(pane6, 400, 450));   
@@ -783,8 +748,6 @@ public class LyricsRockFXX extends Application
 				pane6.getChildren().add(iv1);
 				Score.increaseScoreByOne();
 				A[3]= Score.getScore();
-
-
 				}
 				else
 				{	Text wrong = new Text();
@@ -822,8 +785,6 @@ public class LyricsRockFXX extends Application
 		stageEnd.setScene(new Scene(gridEnd, 500, 400));  
 		stageEnd.setTitle("End Total"); // Set the stage title ///second 	stage name
 
-
-
 		Button buttonEnd = new Button(); ///button for stage 4
 		buttonEnd.setText("Next");
 		buttonEnd.setTranslateX(150);
@@ -838,8 +799,6 @@ public class LyricsRockFXX extends Application
 			@Override
 			public void handle(ActionEvent event) 
 			{
-
-
 				Text tEnd = new Text();
 				tEnd.setWrappingWidth(300);
 				tEnd.setText("Total Score: " +  A[3] + "/4");
@@ -864,13 +823,6 @@ public class LyricsRockFXX extends Application
 				stageEnd.show();
 
 			}
-
-
 		});
-
-
 	}
-
-
-
 }
